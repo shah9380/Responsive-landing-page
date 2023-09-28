@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script>
+        tailwind.config = {
+  theme: {
+    extend: {
+      backgroundImage: {
+        'hero': "url('http://www.w3.org/2000/svg')",
+      },
+      height: {
+        '400' : '500px',
+      }
+    }
+  }
+}
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2c00ac6e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header md:flex justify-between items-center mx-5">
+        <div class="md:flex">
+            <div class="flex justify-center items-center gap-x-2 mt-2">
+                <div class="bg-green-600 w-8 h-8 rounded-3xl flex flex-col justify-center items-center ">
+                    <i class="fa-solid fa-layer-group" style="color: #000000;"></i>
+                </div>
+                <h2 class="font-medium font-sans">Geekster</h2>
+            </div>
+            <div class="flex justify-center items-center mt-2 md:border-l-2 border-gray-400 pl-4 ml-4 mr-auto ">
+                <ul class="flex gap-x-4 justify-center items-center text-gray-400">
+                    <li><a href="" class="text-base hover:text-gray-900">Home</a></li>
+                    <li><a href="" class="text-base hover:text-gray-900">About Us</a></li>
+                    <li><a href="" class="text-base hover:text-gray-900">Contact Us</a></li>
+                    <li><a href="" class="text-base hover:text-gray-900">Map</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-2">
+            <div class="bg-[#F3F4F6] hover:bg-gray-200 cursor-pointer flex gap-x-2 items-center px-4 py-1 rounded">
+                <a href="" class="text-base text-center">Geek</a>
+                <i class="fa-solid fa-arrow-right fa-xs mt-1" style="color: #000000;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 px-5 py-24 md:flex gap-x-6">
+        <div class="text-center flex flex-col justify-center items-center pb-12 md:w-1/2">
+            <h1 class="text-4xl font-medium pb-4">Before they sold out
+                readymade gluten</h1>
+            <p class="pb-8">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+            <div class="flex gap-x-3">
+                <a href="" class="px-6 py-2 bg-green-500 hover:bg-indigo-600 rounded text-white">Yes</a>
+                <a href="" class="px-6 py-2 bg-gray-100 hover:bg-gray-200 rounded">No</a>
+            </div>
+        </div>
+        <div class="px-auto flex justify-center items-center md:grow pr-24 pb-24 pl-24">
+            <img src="./image1.jpg" class="h-[20rem] md: w-full h-fit">
+          </div>
+    </div>
+</body>
+</html>
